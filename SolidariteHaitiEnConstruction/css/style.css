@@ -448,6 +448,15 @@ h3 {
   }
 }
 
+.section_padding_short {
+  padding-bottom: 120px;
+}
+
+.section_padding_top {
+  padding-top: 120px;
+  padding-bottom: 30px;
+}
+
 /* line 1, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_btn.scss */
 .boxed-btn {
   background: #fff;
@@ -1241,7 +1250,7 @@ h3 {
 .header-area .main-header-area .main-menu ul li {
   display: inline-block;
   position: relative;
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
 /* line 130, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
@@ -3358,7 +3367,7 @@ h3 {
 /* line 10, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_voolenteer.scss */
 .our_volunteer_area .single_volenteer .volenteer_thumb {
   padding-right: 35px;
-  padding-bottom: 90px;
+  padding-bottom: 110px;
   padding-left: 25px;
   position: relative;
   z-index: 12;
@@ -3439,7 +3448,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_news.scss */
 .news__area {
-  background: rgba(216, 88, 117, 0.06);
+  background: rgba(255, 255, 255, 1);
 }
 
 /* line 3, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_news.scss */
@@ -4336,7 +4345,20 @@ h6 {
   background-repeat: no-repeat !important;
   background-position: center center !important;
   background-size: cover !important;
-  height: 300px;
+  height:350px;
+}
+.single-gallery-image-short {
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  height:240px;
+}
+.single-gallery-image-tall {
+  margin-top: 30px;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  height:600px;
 }
 
 /* line 449, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_elements.scss */
@@ -5729,13 +5751,17 @@ h6 {
 /* line 596, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
 .blog_item_img {
   position: relative;
+  max-height: 350px;
+  overflow:hidden; 
+  object-position: center;
+  background-repeat: no-repeat;
 }
 
 /* line 599, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
 .blog_item_img .blog_item_date {
   position: absolute;
-  bottom: -10px;
-  left: 10px;
+  bottom:0px;
+  left: 0px;
   display: block;
   color: #fff;
   background-color: #4c7fc2;
@@ -5746,8 +5772,8 @@ h6 {
 @media (min-width: 768px) {
   /* line 599, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
   .blog_item_img .blog_item_date {
-    bottom: -20px;
-    left: 40px;
+    bottom: 0px;
+    left: 0px;
     padding: 13px 30px;
   }
 }
